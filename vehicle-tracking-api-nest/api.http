@@ -15,4 +15,7 @@ Content-Type: application/json
 ###################
 
 ### Get place info by place id
-GET http://localhost:3000/places?text=rua goiania, novo sarandi, toledo, pr
+GET http://localhost:3000/places?text=itapoa sc
+
+### Get direction by two places
+GET http://localhost:3000/directions?originId=ChIJp7SRyLOc85QRyAgfX3zkeJY&destinationId=ChIJdfUuJshW2ZQRsN9WdVbveMk
