@@ -6,7 +6,7 @@ export class RoutesDriverService {
   constructor(private prismaService: PrismaService) {}
 
   async createOrUpdate(dto: { route_id: string; lat: number; lng: number }) {
-    this.prismaService.routeDriver.upsert({
+    await this.prismaService.routeDriver.upsert({
       include: {
         route: true,
       },
